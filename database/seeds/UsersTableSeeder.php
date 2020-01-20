@@ -11,13 +11,19 @@ class UsersTableSeeder extends Seeder
         $faker = app(Faker\Generator::class);
 
         // 头像假数据
-        $avatars = [
-            'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/s5ehp11z6s.png?imageView2/1/w/200/h/200',
-            'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/Lhd1SHqu86.png?imageView2/1/w/200/h/200',
-            'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/LOnMrqbHJn.png?imageView2/1/w/200/h/200',
-            'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/xAuDMxteQy.png?imageView2/1/w/200/h/200',
-            'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png?imageView2/1/w/200/h/200',
-            'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/NDnzMutoxX.png?imageView2/1/w/200/h/200',
+
+
+	$avatars = [
+            'https://pic.qqtn.com/up/2016-1/2016010609094834279.jpg',
+            'https://pic.qqtn.com/up/2016-1/2016010609094856713.jpg',
+            'https://pic.qqtn.com/up/2019-6/20196261429567172.jpg',
+            'https://pic.qqtn.com/up/2016-1/2016010609094866462.jpg',
+            'https://pic.qqtn.com/up/2016-1/2016010609094883288.jpg',
+            'https://pic.qqtn.com/up/2019-8/2019080908525278969.jpg',
+            'https://pic.qqtn.com/up/2016-1/2016010609094968044.jpg',
+            'https://pic.qqtn.com/up/2016-1/2016010609094913163.png',
+            'https://pic.qqtn.com/up/2016-1/2016010609094921444.jpg',
+            'https://pic.qqtn.com/up/2019-8/2019080908525270688.jpg',
         ];
 
         // 生成数据集合
@@ -41,7 +47,7 @@ class UsersTableSeeder extends Seeder
         $user = User::find(1);
         $user->name = 'Summer';
         $user->email = 'summer@yousails.com';
-        $user->avatar = 'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png?imageView2/1/w/200/h/200';
+        $user->avatar = 'https://pic.qqtn.com/up/2016-1/2016010609094819862.jpg';
         $user->save();
 
         // 初始化用户角色，将 1 号用户指派为『站长』
